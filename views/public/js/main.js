@@ -129,7 +129,7 @@ function launchGraph(data){
 function getNodes(){
 	UI.showLoader();
 	Workshop.ajax({
-		url:'http://localhost:1234/uvs',
+		url:'http://' + window.location.hostname + '/uvs',
 		method: 'GET'
 	}, function(err, res, xhr){
 		if(err){
