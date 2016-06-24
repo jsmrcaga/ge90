@@ -110,7 +110,7 @@ function launchGraph(data){
 				setFilter('tech', technology);
 			});
 		UI.hideLoader();
-	}, 1000 * 30); //30 seconds
+	}, 1000 * 60); //1 minute
 
 	exec.graph.on('selectNode', function(event){
 		console.log("Event:", event);
@@ -184,7 +184,7 @@ function setFilter(property, filter){
 	setTimeout(function(){
 		exec.graph.stopSimulation();
 		UI.hideLoader();
-	}, 15 * 1000);
+	}, 30 * 1000); //30 seconds
 }
 
 init();

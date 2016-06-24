@@ -1,0 +1,2752 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="/course-search/favicon.ico">
+<title>
+Course Finder &#124; University of Toronto
+</title>
+<meta name="description" content="Course Finder is the University of Toronto's official publicly available list of undergraduate courses for the Faculty of Arts & Science ? St. George, Faculty of Applied Science and Engineering, University of Toronto Mississauga and University of Toronto Scarborough." />
+<meta name="keywords" content="University of Toronto, Education, Official, University Courses, Toronto, Undergraduate, Arts and Science, Applied Science and Engineering, UTM, UTSC, University of Toronto Mississauga, University of Toronto Scarborough, Find courses, course search, course finder, NGSIS, Acorn, Online Resource Network" />
+<link href="/course-search/krad/css/global/fss-reset.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/css/global/fss-layout.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/css/global/fss-text.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/jqueryUI/jquery-ui-1.8.19.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/jgrowl/jquery.jgrowl.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/rice/datatables/jquery.dataTables.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/rice/datatables/TableTools.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/rice/textpopout/popoutTextarea.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/rice/menu/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/rice/spinner/smartspinner.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/tooltip/jquery.tools.tooltip.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/plugins/tooltip/jquery.bubblepopup.v2.3.1.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/css/global/base.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/css/ks/theme-krad.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search/krad/css/ks/fss-theme-krad.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search//courseSearch/css/courseSearch.css" rel="stylesheet" type="text/css"/>
+<link href="/course-search//courseSearch/css/jquery.tagbox.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript"
+src="/course-search/krad/plugins/jquery/jquery-1.7.2.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/jqueryUI/jquery-ui-1.8.19.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/cookie/jquery.cookie.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/postmsg/jquery.ba-postmessage.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/jgrowl/jquery.jgrowl.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/blockUI/jquery.blockUI.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/watermark/jquery.watermark.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/validate/jquery.validate.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/tooltip/jquery.tools.min.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/tooltip/jquery.bubblepopup.v2.3.1.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/spinner/smartspinner.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/menu/krad.navigationMenu.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/textpopout/krad.textareaPopout.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/dirtyform/jquery.dirtyform.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/scrollto/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/menu/krad.tabMenu.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/datatables/jquery.dataTables.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/datatables/ZeroClipboard.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/rice/datatables/TableTools.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/jstree/jquery.jstree.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/validate/additional_validations.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/jqform/jquery.form.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/easydrag/jquery.easydrag.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/easing/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/json/jquery.json-2.2.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/infusion/infusion-1.4.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/plugins/infusion/infusion.reorderer.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.variables.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.message.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.widget.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.initialize.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.ajax.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.utility.js"></script>
+<script type="text/javascript"
+src="/course-search/krad/scripts/krad.validate.js"></script>
+<script type="text/javascript"
+src="/course-search/courseSearch/scripts/jquery.tagbox.js"></script>
+<script type="text/javascript"
+src="/course-search/courseSearch/scripts/CourseSearch1.js?ver=1"></script>
+<script type="text/javascript"
+src="/course-search/courseSearch/scripts/CourseSearch-ajax.js?ver=1"></script>
+<script type="text/javascript"
+src="/course-search/courseSearch/scripts/CourseSearch.history.js"></script>
+<script type="text/javascript"
+src="/course-search/courseSearch/scripts/jquery-hash-change.js"></script>
+<script type="text/javascript"
+src="/course-search/courseSearch/scripts/jquery.subscribe.js"></script>
+<!-- preload script (server variables) -->
+<script type="text/javascript">
+setGrowlDefaults({position:'top-right',sticky:false,life:7000});initializeViewState({'u106':{defaultOpen:true},'u804':{defaultOpen:true},'u107':{defaultOpen:true},'u802':{defaultOpen:true},'u438':{defaultOpen:true},'u805':{defaultOpen:true},'u43':{defaultOpen:true},'u153':{defaultOpen:true},'u441':{defaultOpen:true},'u151':{defaultOpen:true},'u717':{defaultOpen:true},'u72':{defaultOpen:true},'u440':{defaultOpen:true},'u862':{defaultOpen:true},'u658':{defaultOpen:true},'u659':{defaultOpen:true},'u290':{defaultOpen:true},'u584':{defaultOpen:true},'u656':{defaultOpen:true},'u716':{defaultOpen:true},'u150':{defaultOpen:true},'u292':{defaultOpen:true},'u586':{defaultOpen:true},'u293':{defaultOpen:true},'u587':{defaultOpen:true},'u864':{defaultOpen:true},'u863':{defaultOpen:true},'u866':{defaultOpen:true},'u4':{defaultOpen:true},'u865':{defaultOpen:true},'u730':{defaultOpen:true},'u199':{defaultOpen:true},'u350':{defaultOpen:true},'u198':{defaultOpen:true},'u510':{defaultOpen:true},'u140':{defaultOpen:true},'u145':{defaultOpen:true},'u365':{defaultOpen:true},'u366':{defaultOpen:true},'u363':{defaultOpen:true},'u979':{defaultOpen:true},'u64':{defaultOpen:true},'u982':{defaultOpen:true},'u135':{defaultOpen:true},'u980':{defaultOpen:true},'u981':{defaultOpen:true},'u883':{defaultOpen:true},'u130':{defaultOpen:true},'u214':{defaultOpen:true},'u217':{defaultOpen:true},'u216':{defaultOpen:true},'u513':{defaultOpen:true},'u733':{defaultOpen:true},'u732':{defaultOpen:true},'u512':{defaultOpen:true},'u11':{defaultOpen:true},'u885':{defaultOpen:true},'u886':{defaultOpen:true},'u178':{defaultOpen:true},'u423':{defaultOpen:true},'u424':{defaultOpen:true},'u425':{defaultOpen:true},'u125':{defaultOpen:true},'u120':{defaultOpen:true},'u571':{defaultOpen:true},'u570':{defaultOpen:true}});setConfigParam('kradImageLocation','http://coursefinder.utoronto.ca/course-search/krad/images/');setConfigParam('kradUrl','http://coursefinder.utoronto.ca/course-search/kr-krad');
+</script>
+<!-- custom script for the view -->
+</head>
+<body>
+<div id="Uif-Application" style="display:none;" class="uif-application">
+<!-- APPLICATION HEADER -->
+<head>
+<META NAME="Course Finder University of Toronto">
+<META NAME="google-site-verification" CONTENT="+nxGUDJ4QpAZ5l9Bsjdi102tLVC21AIh5d1Nl23908vVuFHs34="/>
+<title>Course Finder - University of Toronto</title>
+</head>
+<div id="appheader_div" xmlns="http://www.w3.org/1999/html">
+<div id="appheading_div">
+<a href="courseSearch?viewId=CourseSearch-FormView&methodToCall=start"><img src="../courseSearch/images/uoft.png" style="border-right: 1px solid #CCC;" alt="University of Toronto"/></a>
+<img src="../courseSearch/images/coursefinder.png" id="courseSearchImage" alt="Course Search"/>
+<div id="web_links">
+<ul>
+<li><a href="http://www.utoronto.ca">U of T Home</a></li>
+<li><a href="http://www.rosi.utoronto.ca/">ROSI</a></li>
+<li><a href="https://portal.utoronto.ca/webapps/portal/frameset.jsp">Portal</a></li>
+<li class="last_link"><a href="http://www.youtube.com/watch?v=tVu_Zg_K-24" target="_blank">Help</a></li>
+</ul>
+</div>
+</div>
+<div id="appnav_div">
+</div>
+</div>
+<form id="kualiForm" action="http://coursefinder.utoronto.ca/course-search/search/courseSearch" method="post" enctype="multipart/form-data" onsubmit="createLoading(true);">
+<a id="topOfForm"></a>
+<input id="viewId" type="hidden" name="viewId" value="CourseSearch-FormView" >
+<input id="formKey" type="hidden" name="formKey" value="f267de81-a031-4b02-85a0-26f0d9a3bdce" >
+<input id="validateDirty" type="hidden" name="validateDirty" value="true" >
+<input id="renderedInLightBox" type="hidden" name="renderedInLightBox" value="false" >
+<!-- VIEW -->
+<div id="CourseSearch-FormView" class="uif-view uif-formView myplan-view" >
+<!-- BREADCRUMBS -->
+<!-- VIEW HEADER -->
+<div id="u7" class="uif-header uif-viewHeader" data-headerFor="CourseSearch-FormView">
+</div>
+<!-- VIEW CONTENT -->
+<div id="Uif-ViewContentWrapper" class="uif-viewContentWrapper">
+<!-- VIEW NAVIGATION -->
+<div id="Uif-Navigation">
+</div>
+<!-- PAGE CONTENT -->
+<div id="Uif-PageContentWrapper" class="uif-pageContentWrapper">
+<div id="courseSearch" class="uif-page" data-server-messages="false" data-parent="CourseSearch-FormView" data-type="Page">
+<div id="u14" class="uif-header uif-pageHeader clearfix" data-headerFor="courseSearch">
+</div>
+<div id="u15" class="uif-validationMessages uif-groupValidationMessages uif-pageValidationMessages" style="display: none;" data-messagesFor="courseSearch">
+</div>
+<span id="u17_span" class="uif-message uif-instructionalMessage" >
+Course Finder contains undergraduate courses currently offered by Faculty of Arts & Science – St. George, Faculty of Applied Science and Engineering, University of Toronto Mississauga and University of Toronto Scarborough. Results displayed do not imply eligibility to enroll, and may be subject to change. Please check your division's registration instructions and enrolment information.
+</span>
+<div id="u13_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<div id="courseSearchResultSection" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutHorizontalItem" data-parent="courseSearch">
+<div id="u19" class="uif-header uif-subSectionHeader" data-headerFor="courseSearchResultSection">
+</div>
+<div id="u20" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="courseSearchResultSection">
+</div>
+<div id="u18_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="courseSearchPanel" class="uif-group uif-boxGroup uif-verticalBoxGroup myplan-course-search-panel uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultSection">
+<div id="u23" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="courseSearchPanel">
+</div>
+<div id="u22_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="courseSearchFields" class="uif-field uif-fieldGroup uif-horizontalFieldGroup uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchPanel" data-group="u26">
+<fieldset aria-labelledby="courseSearchFields_label" id="courseSearchFields_fieldset">
+<legend style="display: none"></legend>
+<div id="u26" class="uif-group uif-boxGroup uif-horizontalBoxGroup" data-parent="courseSearchFields">
+<div id="u28" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="u26">
+</div>
+<div id="u27_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<div id="searchQueryId" class="uif-field uif-inputField uif-boxLayoutHorizontalItem" data-parent="u26" data-role="InputField">
+<input id="searchQueryId_control" type="text" name="searchQuery" value="" size="30" class="uif-control uif-textControl"
+tabindex="0" data-controlFor="searchQueryId" maxlength="100" minLength="3" >
+<input name="script" type="hidden" data-role="script" value="createWatermark('searchQueryId_control', 'Enter a course code or title or a keyword to search ');"/>
+<input name="script" type="hidden" data-role="dataScript" data-for="searchQueryId_control" value="jQuery('#searchQueryId_control').data('controlFor', 'searchQueryId');"/>
+<!-- placeholder for dynamic field markers -->
+<span id="searchQueryId_markers"></span>
+<div id="searchQueryId_errors" class="uif-validationMessages" style="display: none;" data-messagesFor="searchQueryId">
+</div>
+<span id="searchQueryId_info_message"></span>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="searchQueryId" value="jQuery('#searchQueryId').data('validationMessages', {displayMessages:true,useTooltip:true,messagingEnabled:true,hasOwnMessages:false,serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<button id="ajaxFavouritesSection" class="uif-action uif-primaryActionButton uif-ajaxAction uif-boxLayoutHorizontalItem" style="display: none;" data-ajaxsubmit="true" data-validate="false">
+</button>
+<input name="script" type="hidden" data-role="dataScript" data-for="ajaxFavouritesSection" value="jQuery('#ajaxFavouritesSection').data('submitData', {&quot;methodToCall&quot;:&quot;addFavourite&quot;,&quot;actionParameters[showHistory]&quot;:&quot;false&quot;,&quot;showHistory&quot;:&quot;false&quot;,&quot;actionParameters[showHome]&quot;:&quot;false&quot;,&quot;focusId&quot;:&quot;ajaxFavouritesSection&quot;,&quot;showHome&quot;:&quot;false&quot;,&quot;jumpToId&quot;:&quot;ajaxFavouritesSection&quot;});"/>
+<input name="script" type="hidden" data-role="script" data-for="ajaxFavouritesSection" value="jQuery('#' + 'ajaxFavouritesSection').click(function(e) {
+e.preventDefault();retrieveComponent('favouriteSection','addFavourite');
+});"/>
+<button id="searchForCourses" class="uif-action uif-primaryActionButton course-search-submit myplan-button myplan-button-blue uif-boxLayoutHorizontalItem" data-ajaxsubmit="true" data-validate="false">
+Search
+</button>
+<input name="script" type="hidden" data-role="dataScript" data-for="searchForCourses" value="jQuery('#searchForCourses').data('submitData', {&quot;actionParameters[showHistory]&quot;:&quot;false&quot;,&quot;showHistory&quot;:&quot;false&quot;,&quot;actionParameters[showHome]&quot;:&quot;false&quot;,&quot;focusId&quot;:&quot;searchForCourses&quot;,&quot;showHome&quot;:&quot;false&quot;,&quot;jumpToId&quot;:&quot;searchForCourses&quot;});"/>
+<input name="script" type="hidden" data-role="script" data-for="searchForCourses" value="jQuery('#' + 'searchForCourses').click(function(e) {
+e.preventDefault();if (validateAllSearchFields(3, 'searchQueryId_control', 'campusSelect', 'advanceSearchQuery')) { back(); sInput = ''; jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;'); searchForCourses('courseSearchResults', 'courseSearchResultPanel'); }else {return false;} ;
+});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u26" value="jQuery('#u26').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:true,sections:[],order:['searchQueryId'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</fieldset>
+</div>
+<span id="instructionField_span" class="uif-message uif-boxLayoutVerticalItem clearfix" >
+For example: English, CHM1, or European
+</span>
+<div id="searchCampus" class="uif-field uif-fieldGroup uif-horizontalFieldGroup uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchPanel" data-group="u46">
+<fieldset aria-labelledby="searchCampus_label" id="searchCampus_fieldset">
+<legend style="display: none"></legend>
+<div id="u46" class="uif-group uif-boxGroup uif-horizontalBoxGroup" data-parent="searchCampus">
+<div id="u48" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="u46">
+</div>
+<div id="u47_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<div id="u49" class="uif-field uif-inputField uif-boxLayoutHorizontalItem" style="width: auto;" data-parent="u46" data-role="InputField" data-label="Campus">
+<span id="u49_label_span" class="uif-label" data-labelFor="u49">
+<span id="u51_span" class="uif-message uif-requiredMessage" >
+*
+</span>
+<label id="u49_label" for="u49_control" data-labelFor="u49">
+Campus:
+</label>
+</span>
+<fieldset id="u49_fieldset" aria-labelledby="u49_label" class="uif-horizontalCheckboxesFieldset"
+data-type="CheckboxSet">
+<legend style="display: none">Campus</legend>
+<span>
+<input type="checkbox" id="u49_control_0" name="campusSelect" value="St. George" checked="checked" class="uif-control uif-checkboxesControl uif-horizontalCheckboxesControl required"
+tabindex="0" data-controlFor="u49" >
+<label for="u49_control_0">St. George</label>
+</span>
+&nbsp;
+<span>
+<input type="checkbox" id="u49_control_0_1" name="campusSelect" value="Scarborough" checked="checked" class="uif-control uif-checkboxesControl uif-horizontalCheckboxesControl required"
+tabindex="0" data-controlFor="u49" >
+<label for="u49_control_0_1">University of Toronto Scarborough</label>
+</span>
+&nbsp;
+<span>
+<input type="checkbox" id="u49_control_0_1_2" name="campusSelect" value="Mississauga" checked="checked" class="uif-control uif-checkboxesControl uif-horizontalCheckboxesControl required"
+tabindex="0" data-controlFor="u49" >
+<label for="u49_control_0_1_2">University of Toronto Mississauga</label>
+</span>
+&nbsp;
+<input type="hidden" name="_campusSelect" value="on"/>
+</fieldset>
+<input name="script" type="hidden" data-role="dataScript" data-for="u49_control" value="jQuery('#u49_control').data('controlFor', 'u49');"/>
+<!-- placeholder for dynamic field markers -->
+<span id="u49_markers"></span>
+<div id="u49_errors" class="uif-validationMessages" style="display: none;" data-messagesFor="u49">
+</div>
+<span id="u49_info_message"></span>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u49" value="jQuery('#u49').data('validationMessages', {displayMessages:true,useTooltip:true,messagingEnabled:true,hasOwnMessages:false,serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u46" value="jQuery('#u46').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:true,sections:[],order:['u49'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</fieldset>
+</div>
+<div id="u65" class="uif-group uif-boxGroup uif-horizontalBoxGroup uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchPanel">
+<div id="u67" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="u65">
+</div>
+<div id="u66_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<img id="expand" src="../courseSearch/images/advanced_search_expand.png" alt=""
+class="uif-image uif-boxLayoutHorizontalItem" />
+<input name="script" type="hidden" data-role="script" data-for="expand" value="jQuery('#' + 'expand').click(function(e) {
+toggleMe('advanceSearchFieldsId'); jq('#expand').attr('style', 'display:none;'); jq('#collapse').attr('style','display:inline;');
+});"/>
+<img id="collapse" src="../courseSearch/images/advanced_search_collapse.png" alt=""
+class="uif-image uif-boxLayoutHorizontalItem" style="display:none;" />
+<input name="script" type="hidden" data-role="script" data-for="collapse" value="jQuery('#' + 'collapse').click(function(e) {
+toggleMe('advanceSearchFieldsId'); jq('#collapse').attr('style', 'display:none;'); jq('#expand').attr('style','display:inline;');
+});"/>
+<div id="u68" class="uif-field uif-linkField uif-boxLayoutHorizontalItem" >
+<a id="u71" href="" target="_self"
+class="uif-link" >Requirements</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u68" value="jQuery('#' + 'u68').click(function(e) {
+toggleMeWithImage('advanceSearchFieldsId','expand','collapse'); return false;
+});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u65" value="jQuery('#u65').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="advanceSearchFieldsId" class="uif-field uif-fieldGroup uif-horizontalFieldGroup uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchPanel" data-group="u75">
+<fieldset aria-labelledby="advanceSearchFieldsId_label" id="advanceSearchFieldsId_fieldset">
+<legend style="display: none"></legend>
+<div id="u75" class="uif-group uif-boxGroup uif-horizontalBoxGroup" data-parent="advanceSearchFieldsId">
+<div id="u77" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="u75">
+</div>
+<div id="u76_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<div id="textArea" class="uif-field uif-inputField uif-boxLayoutHorizontalItem" data-parent="u75" data-role="InputField">
+<select id="textArea_control" name="reqDropDown" size="1" class="uif-control uif-dropdownControl"
+tabindex="0" data-controlFor="textArea">
+<option value=" "
+>Faculty of Arts and Science Distribution Requirements</option>
+<option value="DIS_ID_2465"
+>-- A&amp;S: Humanities</option>
+<option value="DIS_ID_4215"
+>-- A&amp;S: Science</option>
+<option value="DIS_ID_3541"
+>-- A&amp;S: Social Science</option>
+<option value=" "
+>University of Toronto Mississauga Distribution Requirements</option>
+<option value="DIS_ID_UTM1"
+>-- UTM: Humanities</option>
+<option value="DIS_ID_UTM2"
+>-- UTM: Science</option>
+<option value="DIS_ID_UTM3"
+>-- UTM: Social Science</option>
+<option value=" "
+>Faculty of Arts and Science Breadth Requirements</option>
+<option value="BRE_ID_2583"
+>-- A&amp;S: (1) Creative and Cultural Representation</option>
+<option value="BRE_ID_3574"
+>-- A&amp;S: (2) Thought, Belief and Behaviour</option>
+<option value="BRE_ID_1764"
+>-- A&amp;S: (3) Society and its Institutions</option>
+<option value="BRE_ID_3726"
+>-- A&amp;S: (4) Living Things and Their Environment</option>
+<option value="BRE_ID_3581"
+>-- A&amp;S: (5) The Physical and Mathematical Universes</option>
+<option value=" "
+>University of Toronto Scarborough Breadth Requirements</option>
+<option value="BRE_ID_1153"
+>-- UTSC: Arts, Literature &amp; Language</option>
+<option value="BRE_ID_5564"
+>-- UTSC: History, Philosophy &amp; Cultural Studies</option>
+<option value="BRE_ID_1294"
+>-- UTSC: Natural Sciences</option>
+<option value="BRE_ID_1119"
+>-- UTSC: Quantitative Reasoning</option>
+<option value="BRE_ID_1349"
+>-- UTSC: Social &amp; Behavioural Sciences</option>
+<option value=" "
+>Faculty of Applied Science &amp; Engineering Electives </option>
+<option value="BRE_ID_4777"
+>-- APSC: APSc-Natural Science</option>
+<option value="BRE_ID_5550"
+>-- APSC: Complementary Studies</option>
+<option value="BRE_ID_4771"
+>-- APSC: Humanities &amp; Social Sciences</option>
+</select>
+<input name="script" type="hidden" data-role="dataScript" data-for="textArea_control" value="jQuery('#textArea_control').data('controlFor', 'textArea');"/>
+<!-- placeholder for dynamic field markers -->
+<span id="textArea_markers"></span>
+<div id="textArea_errors" class="uif-validationMessages" style="display: none;" data-messagesFor="textArea">
+</div>
+<span id="textArea_info_message"></span>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="textArea" value="jQuery('#textArea').data('validationMessages', {displayMessages:true,useTooltip:true,messagingEnabled:true,hasOwnMessages:false,serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="jquery-tagbox-select" class="uif-field uif-inputField uif-boxLayoutHorizontalItem" data-parent="u75" data-role="InputField">
+<input id="jquery-tagbox-select_control" type="text" name="advanceSearchQuery" value="" size="30" class="uif-control uif-textControl"
+tabindex="0" data-controlFor="jquery-tagbox-select" >
+<input name="script" type="hidden" data-role="dataScript" data-for="jquery-tagbox-select_control" value="jQuery('#jquery-tagbox-select_control').data('controlFor', 'jquery-tagbox-select');"/>
+<!-- placeholder for dynamic field markers -->
+<span id="jquery-tagbox-select_markers"></span>
+<div id="jquery-tagbox-select_errors" class="uif-validationMessages" style="display: none;" data-messagesFor="jquery-tagbox-select">
+</div>
+<span id="jquery-tagbox-select_info_message"></span>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="jquery-tagbox-select" value="jQuery('#jquery-tagbox-select').data('validationMessages', {displayMessages:true,useTooltip:true,messagingEnabled:true,hasOwnMessages:false,serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u75" value="jQuery('#u75').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:true,sections:[],order:['textArea','jquery-tagbox-select'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</fieldset>
+</div>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="courseSearchPanel" value="jQuery('#courseSearchPanel').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:['searchQueryId','u49','textArea','jquery-tagbox-select'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<span id="finder_crumb" style="display:none;">
+<a name="finder"
+onclick="jq('#searchQueryId_control').attr('value', '');
+jq('#finder_crumb').attr('style', 'display:none;'); jq('#deptBrowseSection').attr('style', 'display:block;');
+jq('#courseSearchResultPanel').attr('style', 'display:none;');
+jq('#result_crumb').attr('style', 'display:none;');return false; ">
+Course Finder
+</a>
+> Search Result
+</span>
+<div id="courseSearchResultPanel" class="uif-group uif-boxGroup uif-horizontalBoxGroup uif-boxLayoutVerticalItem clearfix" style="display:none;" data-parent="courseSearchResultSection">
+<div id="u112" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="courseSearchResultPanel">
+</div>
+<div id="u111_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<div id="courseSearchResultsFacets" class="uif-group uif-boxGroup uif-verticalBoxGroup myplan-facets-panel uif-boxLayoutHorizontalItem" data-parent="courseSearchResultPanel">
+<div id="u114" class="uif-header" data-headerFor="courseSearchResultsFacets">
+</div>
+<div id="u115" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="courseSearchResultsFacets">
+</div>
+<div id="u113_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="facetDivisionNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u117" class="uif-header" data-headerFor="facetDivisionNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Division</span>
+</h6>
+</div>
+<div id="facetDivisionNew_disclosureContent" class="uif-disclosureContent">
+<div id="u118" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetDivisionNew">
+</div>
+<div id="u116_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetDivisionNew', 'u117', 'u120', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetDivisionNew" value="jQuery('#facetDivisionNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetDivisionNew" value="jQuery(document).ready(function(e) {
+jq('#facetDivisionNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(7, this, alpha, facetDivisionFilter, 'facetDivision'); });
+});"/>
+<div id="facetDeptNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u122" class="uif-header" data-headerFor="facetDeptNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Department</span>
+</h6>
+</div>
+<div id="facetDeptNew_disclosureContent" class="uif-disclosureContent">
+<div id="u123" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetDeptNew">
+</div>
+<div id="u121_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetDeptNew', 'u122', 'u125', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetDeptNew" value="jQuery('#facetDeptNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetDeptNew" value="jQuery(document).ready(function(e) {
+jq('#facetDeptNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(5, this, alpha, facetDeptFilter, 'facetDepartment'); });
+});"/>
+<div id="facetTermNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u127" class="uif-header" data-headerFor="facetTermNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Term</span>
+<input name="script" type="hidden" data-role="script" data-for="u129" value="createTooltip('u129', 'Term+ denotes courses that span more than one term', {position:'top',align:'left',alwaysVisible:false,tail:{ align:'left', hidden: false },themePath:'../krad/plugins/tooltip/jquerybubblepopup-theme/',themeName:'black',selectable:true}, true, false);"/>
+<input name="script" type="hidden" data-role="script" data-for="u129" value="addAttribute('u129', 'class', 'uif-tooltip', true);"/>
+</h6>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u127" value="createTooltip('u127', 'Term+ denotes courses that span more than one term', {position:'top',align:'left',alwaysVisible:false,tail:{ align:'left', hidden: false },themePath:'../krad/plugins/tooltip/jquerybubblepopup-theme/',themeName:'black',selectable:true}, true, false);"/>
+<input name="script" type="hidden" data-role="script" data-for="u127" value="addAttribute('u127', 'class', 'uif-tooltip', true);"/>
+<div id="facetTermNew_disclosureContent" class="uif-disclosureContent">
+<div id="u128" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetTermNew">
+</div>
+<div id="u126_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetTermNew', 'u127', 'u130', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetTermNew" value="jQuery('#facetTermNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetTermNew" value="jQuery(document).ready(function(e) {
+jq('#facetTermNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(6, this, alpha, facetTermFilter, 'facetTerm'); });
+});"/>
+<div id="facetDaysNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u132" class="uif-header" data-headerFor="facetDaysNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Days of Week</span>
+</h6>
+</div>
+<div id="facetDaysNew_disclosureContent" class="uif-disclosureContent">
+<div id="u133" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetDaysNew">
+</div>
+<div id="u131_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetDaysNew', 'u132', 'u135', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetDaysNew" value="jQuery('#facetDaysNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetDaysNew" value="jQuery(document).ready(function(e) {
+jq('#facetDaysNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(8, this, days, facetDaysFilter, 'facetDays'); });
+});"/>
+<div id="facetTimeNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u137" class="uif-header" data-headerFor="facetTimeNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Time</span>
+</h6>
+</div>
+<div id="facetTimeNew_disclosureContent" class="uif-disclosureContent">
+<div id="u138" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetTimeNew">
+</div>
+<div id="u136_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetTimeNew', 'u137', 'u140', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetTimeNew" value="jQuery('#facetTimeNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetTimeNew" value="jQuery(document).ready(function(e) {
+jq('#facetTimeNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(10, this, time, facetTimeFilter, 'facetTime'); });
+});"/>
+<div id="facetCreditNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u142" class="uif-header" data-headerFor="facetCreditNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Credit</span>
+</h6>
+</div>
+<div id="facetCreditNew_disclosureContent" class="uif-disclosureContent">
+<div id="u143" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetCreditNew">
+</div>
+<div id="u141_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetCreditNew', 'u142', 'u145', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetCreditNew" value="jQuery('#facetCreditNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetCreditNew" value="jQuery(document).ready(function(e) {
+jq('#facetCreditNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(3, this, decimalDesc, facetCreditFilter, 'facetCredit'); });
+});"/>
+<div id="facetLevelNew" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure myplan-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultsFacets">
+<div id="u147" class="uif-header" data-headerFor="facetLevelNew">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Course Level</span>
+</h6>
+</div>
+<div id="facetLevelNew_disclosureContent" class="uif-disclosureContent">
+<div id="u148" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="facetLevelNew">
+</div>
+<div id="u146_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('facetLevelNew', 'u147', 'u150', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="facetLevelNew" value="jQuery('#facetLevelNew').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="facetLevelNew" value="jQuery(document).ready(function(e) {
+jq('#facetLevelNew') .subscribe('GENERATE_FACETS', function(){ fnGenerateFacetGroup(9, this, numeric, facetLevelFilter, 'facetCourseLevel'); });
+});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="courseSearchResultsFacets" value="jQuery('#courseSearchResultsFacets').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['facetDivisionNew','facetDeptNew','facetTermNew','facetDaysNew','facetTimeNew','facetCreditNew','facetLevelNew'],order:['s$facetDivisionNew','s$facetDeptNew','s$facetTermNew','s$facetDaysNew','s$facetTimeNew','s$facetCreditNew','s$facetLevelNew'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<table id="courseSearchResults" class="uif-tableCollectionLayout uif-dataTable uif-boxLayoutHorizontalItem">
+</table>
+<input name="script" type="hidden" data-role="script" value="createTable('courseSearchResults', {oLanguage:{ 'sInfo':'Showing _START_-_END_' },sDom:'iltp',sPaginationType:'full_numbers',aLengthMenu:[20, 40, 60, 100],iDisplayLength:20,bAutoWidth:false,aoColumnDefs:[{'bVisible': false, 'aTargets': [8,9,10] }],oTableTools:{&quot;aButtons&quot; : [ &quot;csv&quot;, &quot;xls&quot; ] , &quot;sSwfPath&quot; : &quot;http://coursefinder.utoronto.ca/course-search/krad/scripts/jquery/copy_cvs_xls_pdf.swf&quot; }}); "/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="courseSearchResultPanel" value="jQuery('#courseSearchResultPanel').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['facetDivisionNew','facetDeptNew','facetTermNew','facetDaysNew','facetTimeNew','facetCreditNew','facetLevelNew'],order:['s$facetDivisionNew','s$facetDeptNew','s$facetTermNew','s$facetDaysNew','s$facetTimeNew','s$facetCreditNew','s$facetLevelNew'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="deptBrowseSection" class="uif-group uif-boxGroup uif-horizontalBoxGroup browse-section uif-boxLayoutVerticalItem clearfix" data-parent="courseSearchResultSection">
+<div id="u155" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="deptBrowseSection">
+</div>
+<div id="u154_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+<div id="browseCourseFacets" class="uif-group uif-boxGroup uif-verticalBoxGroup browse-facets-panel uif-boxLayoutHorizontalItem" data-parent="deptBrowseSection">
+<div id="u157" class="uif-header" data-headerFor="browseCourseFacets">
+</div>
+<div id="u158" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="browseCourseFacets">
+</div>
+<div id="u156_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="deptFacet" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure browse-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="browseCourseFacets">
+<div id="u160" class="uif-header" data-headerFor="deptFacet">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Departments</span>
+</h6>
+</div>
+<div id="deptFacet_disclosureContent" class="uif-disclosureContent">
+<div id="u161" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="deptFacet">
+</div>
+<div id="u159_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="all_dept" class="uif-field uif-linkField browse-facet-selected uif-boxLayoutVerticalItem clearfix" >
+<a id="u165" href="" target="_self"
+class="uif-link" >All</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="all_dept" value="jQuery('#' + 'all_dept').click(function(e) {
+addRemove('all_dept', 'browse-facet-selected'); deptControl('all');return false;
+});"/>
+<div id="as_dept" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u168" href="" target="_self"
+class="uif-link" >Faculty of Arts and Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="as_dept" value="jQuery('#' + 'as_dept').click(function(e) {
+addRemove('as_dept', 'browse-facet-selected');deptControl('artsDept');return false;
+});"/>
+<div id="apsc_dept" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u171" href="" target="_self"
+class="uif-link" >Faculty of Applied Science and Engineering</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="apsc_dept" value="jQuery('#' + 'apsc_dept').click(function(e) {
+addRemove('apsc_dept', 'browse-facet-selected');deptControl('apscDept');return false;
+});"/>
+<div id="utsc_dept" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u174" href="" target="_self"
+class="uif-link" >University of Toronto Scarborough</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="utsc_dept" value="jQuery('#' + 'utsc_dept').click(function(e) {
+addRemove('utsc_dept', 'browse-facet-selected');deptControl('scarDept');return false;
+});"/>
+<div id="utm_dept" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u177" href="" target="_self"
+class="uif-link" >University of Toronto Mississauga</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="utm_dept" value="jQuery('#' + 'utm_dept').click(function(e) {
+addRemove('utm_dept', 'browse-facet-selected');deptControl('utmDept');return false;
+});"/>
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('deptFacet', 'u160', 'u178', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="deptFacet" value="jQuery('#deptFacet').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="reqFacet" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-disclosure browse-facets-group uif-boxLayoutVerticalItem clearfix" data-parent="browseCourseFacets">
+<div id="u180" class="uif-header" data-headerFor="reqFacet">
+<h6 class="uif-headerText"><span class="uif-headerText-span">Requirements</span>
+</h6>
+</div>
+<div id="reqFacet_disclosureContent" class="uif-disclosureContent">
+<div id="u181" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="reqFacet">
+</div>
+<div id="u179_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="all_req" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u185" href="" target="_self"
+class="uif-link" >All</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="all_req" value="jQuery('#' + 'all_req').click(function(e) {
+addRemove('all_req', 'browse-facet-selected');reqControl('all');return false;
+});"/>
+<div id="as_req" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u188" href="" target="_self"
+class="uif-link" >Faculty of Arts and Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="as_req" value="jQuery('#' + 'as_req').click(function(e) {
+addRemove('as_req', 'browse-facet-selected');reqControl('artsReq');return false;
+});"/>
+<div id="apsc_req" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u191" href="" target="_self"
+class="uif-link" >Faculty of Applied Science and Engineering</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="apsc_req" value="jQuery('#' + 'apsc_req').click(function(e) {
+addRemove('apsc_req', 'browse-facet-selected');reqControl('apscReq');return false;
+});"/>
+<div id="utsc_req" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u194" href="" target="_self"
+class="uif-link" >University of Toronto Scarborough</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="utsc_req" value="jQuery('#' + 'utsc_req').click(function(e) {
+addRemove('utsc_req', 'browse-facet-selected');reqControl('scarReq');return false;
+});"/>
+<div id="utm_req" class="uif-field uif-linkField uif-boxLayoutVerticalItem clearfix" >
+<a id="u197" href="" target="_self"
+class="uif-link" >University of Toronto Mississauga</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="utm_req" value="jQuery('#' + 'utm_req').click(function(e) {
+addRemove('utm_req', 'browse-facet-selected');reqControl('utmReq');return false;
+});"/>
+</div>
+<input name="script" type="hidden" data-role="script" value="createDisclosure('reqFacet', 'u180', 'u198', true,
+'http://coursefinder.utoronto.ca/course-search/krad/images/h2_collapse.png', 'http://coursefinder.utoronto.ca/course-search/krad/images/h2_expand.png', 500, true);"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="reqFacet" value="jQuery('#reqFacet').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="browseCourseFacets" value="jQuery('#browseCourseFacets').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['deptFacet','reqFacet'],order:['s$deptFacet','s$reqFacet'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="deptDisplayLeft" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxLayoutHorizontalItem" data-parent="deptBrowseSection">
+<div id="u201" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="deptDisplayLeft">
+</div>
+<div id="u200_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="artsDept" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" data-parent="deptDisplayLeft">
+<div id="u203" class="uif-header uif-subSectionHeader" data-headerFor="artsDept">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Faculty of Arts and Science</span>
+</h4>
+</div>
+<div id="u204" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsDept">
+</div>
+<div id="u202_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="artsDeptList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="artsDept">
+<div id="u207" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsDeptList">
+</div>
+<table id="u206" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line0" class="uif-field uif-linkField" >
+<a id="u273_line0" href="" target="_self"
+class="uif-link" >ASDN: Arts and Science, Office of the Dean </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line0" value="jQuery('#' + 'u270_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ASDN ', 'ASDN: Arts and Science, Office of the Dean ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line1" class="uif-field uif-linkField" >
+<a id="u273_line1" href="" target="_self"
+class="uif-link" >Aboriginal Studies Arts & Science </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line1" value="jQuery('#' + 'u270_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ASABS', 'Aboriginal Studies Arts &amp; Science ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line2" class="uif-field uif-linkField" >
+<a id="u273_line2" href="" target="_self"
+class="uif-link" >Anatomy and Cell Biology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line2" value="jQuery('#' + 'u270_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ANA ', 'Anatomy and Cell Biology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line3" class="uif-field uif-linkField" >
+<a id="u273_line3" href="" target="_self"
+class="uif-link" >Anthropology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line3" value="jQuery('#' + 'u270_line3').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ANT ', 'Anthropology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line4" class="uif-field uif-linkField" >
+<a id="u273_line4" href="" target="_self"
+class="uif-link" >Art </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line4" value="jQuery('#' + 'u270_line4').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','FAR ', 'Art ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line5" class="uif-field uif-linkField" >
+<a id="u273_line5" href="" target="_self"
+class="uif-link" >Arts & Science Seminars </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line5" value="jQuery('#' + 'u270_line5').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ASSEM', 'Arts &amp; Science Seminars ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line6" class="uif-field uif-linkField" >
+<a id="u273_line6" href="" target="_self"
+class="uif-link" >Asia Pacific Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line6" value="jQuery('#' + 'u270_line6').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ASI ', 'Asia Pacific Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line7" class="uif-field uif-linkField" >
+<a id="u273_line7" href="" target="_self"
+class="uif-link" >Astronomy and Astrophysics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line7" value="jQuery('#' + 'u270_line7').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','AST ', 'Astronomy and Astrophysics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line8" class="uif-field uif-linkField" >
+<a id="u273_line8" href="" target="_self"
+class="uif-link" >Biochemistry </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line8" value="jQuery('#' + 'u270_line8').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','BCH ', 'Biochemistry ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line9" class="uif-field uif-linkField" >
+<a id="u273_line9" href="" target="_self"
+class="uif-link" >Canadian Institute for Theoretical Astrophysics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line9" value="jQuery('#' + 'u270_line9').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CITA ', 'Canadian Institute for Theoretical Astrophysics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line10" class="uif-field uif-linkField" >
+<a id="u273_line10" href="" target="_self"
+class="uif-link" >Cell and Systems Biology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line10" value="jQuery('#' + 'u270_line10').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CSB ', 'Cell and Systems Biology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line11" class="uif-field uif-linkField" >
+<a id="u273_line11" href="" target="_self"
+class="uif-link" >Centre for Comparative Literature </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line11" value="jQuery('#' + 'u270_line11').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','COL ', 'Centre for Comparative Literature ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line12" class="uif-field uif-linkField" >
+<a id="u273_line12" href="" target="_self"
+class="uif-link" >Centre for Criminology and Sociolegal Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line12" value="jQuery('#' + 'u270_line12').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CRIM ', 'Centre for Criminology and Sociolegal Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line13" class="uif-field uif-linkField" >
+<a id="u273_line13" href="" target="_self"
+class="uif-link" >Centre for Diaspora & Transnational Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line13" value="jQuery('#' + 'u270_line13').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','DTS ', 'Centre for Diaspora &amp; Transnational Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line14" class="uif-field uif-linkField" >
+<a id="u273_line14" href="" target="_self"
+class="uif-link" >Centre for Drama, Theatre and Performance Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line14" value="jQuery('#' + 'u270_line14').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','DRAMA', 'Centre for Drama, Theatre and Performance Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line15" class="uif-field uif-linkField" >
+<a id="u273_line15" href="" target="_self"
+class="uif-link" >Centre for Ethics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line15" value="jQuery('#' + 'u270_line15').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ETHIC', 'Centre for Ethics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line16" class="uif-field uif-linkField" >
+<a id="u273_line16" href="" target="_self"
+class="uif-link" >Centre for European, Russian and Eurasian Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line16" value="jQuery('#' + 'u270_line16').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CERES', 'Centre for European, Russian and Eurasian Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line17" class="uif-field uif-linkField" >
+<a id="u273_line17" href="" target="_self"
+class="uif-link" >Centre for Industrial Relations and Human Resources </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line17" value="jQuery('#' + 'u270_line17').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','IRE ', 'Centre for Industrial Relations and Human Resources ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line18" class="uif-field uif-linkField" >
+<a id="u273_line18" href="" target="_self"
+class="uif-link" >Centre for Medieval Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line18" value="jQuery('#' + 'u270_line18').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MST ', 'Centre for Medieval Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line19" class="uif-field uif-linkField" >
+<a id="u273_line19" href="" target="_self"
+class="uif-link" >Centre for Study of United States </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line19" value="jQuery('#' + 'u270_line19').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CSUS ', 'Centre for Study of United States ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line20" class="uif-field uif-linkField" >
+<a id="u273_line20" href="" target="_self"
+class="uif-link" >Chemistry </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line20" value="jQuery('#' + 'u270_line20').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CHM ', 'Chemistry ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line21" class="uif-field uif-linkField" >
+<a id="u273_line21" href="" target="_self"
+class="uif-link" >Cinema Studies Institute </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line21" value="jQuery('#' + 'u270_line21').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CINE ', 'Cinema Studies Institute ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line22" class="uif-field uif-linkField" >
+<a id="u273_line22" href="" target="_self"
+class="uif-link" >Classics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line22" value="jQuery('#' + 'u270_line22').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CLAS ', 'Classics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line23" class="uif-field uif-linkField" >
+<a id="u273_line23" href="" target="_self"
+class="uif-link" >Computer Science </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line23" value="jQuery('#' + 'u270_line23').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CSC ', 'Computer Science ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line24" class="uif-field uif-linkField" >
+<a id="u273_line24" href="" target="_self"
+class="uif-link" >Department for the Study of Religion </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line24" value="jQuery('#' + 'u270_line24').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','RLG ', 'Department for the Study of Religion ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line25" class="uif-field uif-linkField" >
+<a id="u273_line25" href="" target="_self"
+class="uif-link" >Earth Sciences </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line25" value="jQuery('#' + 'u270_line25').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ES ', 'Earth Sciences ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line26" class="uif-field uif-linkField" >
+<a id="u273_line26" href="" target="_self"
+class="uif-link" >East Asian Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line26" value="jQuery('#' + 'u270_line26').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','EAS ', 'East Asian Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line27" class="uif-field uif-linkField" >
+<a id="u273_line27" href="" target="_self"
+class="uif-link" >Ecology and Evolutionary Biology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line27" value="jQuery('#' + 'u270_line27').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','EEB ', 'Ecology and Evolutionary Biology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line28" class="uif-field uif-linkField" >
+<a id="u273_line28" href="" target="_self"
+class="uif-link" >Economics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line28" value="jQuery('#' + 'u270_line28').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ECO ', 'Economics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line29" class="uif-field uif-linkField" >
+<a id="u273_line29" href="" target="_self"
+class="uif-link" >English </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line29" value="jQuery('#' + 'u270_line29').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ENG ', 'English ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line30" class="uif-field uif-linkField" >
+<a id="u273_line30" href="" target="_self"
+class="uif-link" >Faculty of Arts and Science </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line30" value="jQuery('#' + 'u270_line30').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ARTSC', 'Faculty of Arts and Science ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line31" class="uif-field uif-linkField" >
+<a id="u273_line31" href="" target="_self"
+class="uif-link" >Faculty of Forestry </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line31" value="jQuery('#' + 'u270_line31').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','FOR ', 'Faculty of Forestry ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line32" class="uif-field uif-linkField" >
+<a id="u273_line32" href="" target="_self"
+class="uif-link" >Faculty of Music </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line32" value="jQuery('#' + 'u270_line32').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MUSIC', 'Faculty of Music ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line33" class="uif-field uif-linkField" >
+<a id="u273_line33" href="" target="_self"
+class="uif-link" >French </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line33" value="jQuery('#' + 'u270_line33').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','FRE ', 'French ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line34" class="uif-field uif-linkField" >
+<a id="u273_line34" href="" target="_self"
+class="uif-link" >Geography and Planning </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line34" value="jQuery('#' + 'u270_line34').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','GGR ', 'Geography and Planning ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line35" class="uif-field uif-linkField" >
+<a id="u273_line35" href="" target="_self"
+class="uif-link" >Germanic Languages & Literatures </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line35" value="jQuery('#' + 'u270_line35').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','GER ', 'Germanic Languages &amp; Literatures ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line36" class="uif-field uif-linkField" >
+<a id="u273_line36" href="" target="_self"
+class="uif-link" >History </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line36" value="jQuery('#' + 'u270_line36').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','HIS ', 'History ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line37" class="uif-field uif-linkField" >
+<a id="u273_line37" href="" target="_self"
+class="uif-link" >Human Biology Program </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line37" value="jQuery('#' + 'u270_line37').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','HMB ', 'Human Biology Program ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line38" class="uif-field uif-linkField" >
+<a id="u273_line38" href="" target="_self"
+class="uif-link" >Immunology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line38" value="jQuery('#' + 'u270_line38').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','IMM ', 'Immunology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line39" class="uif-field uif-linkField" >
+<a id="u273_line39" href="" target="_self"
+class="uif-link" >Innis College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line39" value="jQuery('#' + 'u270_line39').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','INNIS', 'Innis College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line40" class="uif-field uif-linkField" >
+<a id="u273_line40" href="" target="_self"
+class="uif-link" >Inst. for the History & Philosophy of Science & Technology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line40" value="jQuery('#' + 'u270_line40').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','IHPST', 'Inst. for the History &amp; Philosophy of Science &amp; Technology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line41" class="uif-field uif-linkField" >
+<a id="u273_line41" href="" target="_self"
+class="uif-link" >Italian Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line41" value="jQuery('#' + 'u270_line41').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ITA ', 'Italian Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line42" class="uif-field uif-linkField" >
+<a id="u273_line42" href="" target="_self"
+class="uif-link" >Jewish Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line42" value="jQuery('#' + 'u270_line42').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','JSP ', 'Jewish Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line43" class="uif-field uif-linkField" >
+<a id="u273_line43" href="" target="_self"
+class="uif-link" >Laboratory Medicine and Pathobiology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line43" value="jQuery('#' + 'u270_line43').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','LMP ', 'Laboratory Medicine and Pathobiology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line44" class="uif-field uif-linkField" >
+<a id="u273_line44" href="" target="_self"
+class="uif-link" >Latin American Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line44" value="jQuery('#' + 'u270_line44').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','LAS ', 'Latin American Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line45" class="uif-field uif-linkField" >
+<a id="u273_line45" href="" target="_self"
+class="uif-link" >Linguistics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line45" value="jQuery('#' + 'u270_line45').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','LIN ', 'Linguistics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line46" class="uif-field uif-linkField" >
+<a id="u273_line46" href="" target="_self"
+class="uif-link" >Mathematics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line46" value="jQuery('#' + 'u270_line46').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MAT ', 'Mathematics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line47" class="uif-field uif-linkField" >
+<a id="u273_line47" href="" target="_self"
+class="uif-link" >Molecular Genetics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line47" value="jQuery('#' + 'u270_line47').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MEDGM', 'Molecular Genetics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line48" class="uif-field uif-linkField" >
+<a id="u273_line48" href="" target="_self"
+class="uif-link" >Near & Middle Eastern Civilizations </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line48" value="jQuery('#' + 'u270_line48').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','NMC ', 'Near &amp; Middle Eastern Civilizations ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line49" class="uif-field uif-linkField" >
+<a id="u273_line49" href="" target="_self"
+class="uif-link" >New College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line49" value="jQuery('#' + 'u270_line49').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','NEW ', 'New College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line50" class="uif-field uif-linkField" >
+<a id="u273_line50" href="" target="_self"
+class="uif-link" >Nutritional Sciences </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line50" value="jQuery('#' + 'u270_line50').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','NUSCI', 'Nutritional Sciences ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line51" class="uif-field uif-linkField" >
+<a id="u273_line51" href="" target="_self"
+class="uif-link" >Ontario Institute for Studies in Education/Univ. of Toronto </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line51" value="jQuery('#' + 'u270_line51').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','OISUT', 'Ontario Institute for Studies in Education/Univ. of Toronto ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line52" class="uif-field uif-linkField" >
+<a id="u273_line52" href="" target="_self"
+class="uif-link" >Optical Technologies Centre </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line52" value="jQuery('#' + 'u270_line52').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','OTC ', 'Optical Technologies Centre ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line53" class="uif-field uif-linkField" >
+<a id="u273_line53" href="" target="_self"
+class="uif-link" >Pharmacology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line53" value="jQuery('#' + 'u270_line53').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PCL ', 'Pharmacology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line54" class="uif-field uif-linkField" >
+<a id="u273_line54" href="" target="_self"
+class="uif-link" >Philosophy </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line54" value="jQuery('#' + 'u270_line54').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PHL ', 'Philosophy ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line55" class="uif-field uif-linkField" >
+<a id="u273_line55" href="" target="_self"
+class="uif-link" >Physics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line55" value="jQuery('#' + 'u270_line55').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PHY ', 'Physics ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line56" class="uif-field uif-linkField" >
+<a id="u273_line56" href="" target="_self"
+class="uif-link" >Physiology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line56" value="jQuery('#' + 'u270_line56').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PSL ', 'Physiology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line57" class="uif-field uif-linkField" >
+<a id="u273_line57" href="" target="_self"
+class="uif-link" >Political Science </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line57" value="jQuery('#' + 'u270_line57').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','POL ', 'Political Science ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line58" class="uif-field uif-linkField" >
+<a id="u273_line58" href="" target="_self"
+class="uif-link" >Psychology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line58" value="jQuery('#' + 'u270_line58').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PSY ', 'Psychology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line59" class="uif-field uif-linkField" >
+<a id="u273_line59" href="" target="_self"
+class="uif-link" >Rotman Commerce </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line59" value="jQuery('#' + 'u270_line59').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','COMPG', 'Rotman Commerce ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line60" class="uif-field uif-linkField" >
+<a id="u273_line60" href="" target="_self"
+class="uif-link" >School of Environment </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line60" value="jQuery('#' + 'u270_line60').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ENVMT', 'School of Environment ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line61" class="uif-field uif-linkField" >
+<a id="u273_line61" href="" target="_self"
+class="uif-link" >School of Global Affairs </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line61" value="jQuery('#' + 'u270_line61').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','GLAF ', 'School of Global Affairs ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line62" class="uif-field uif-linkField" >
+<a id="u273_line62" href="" target="_self"
+class="uif-link" >School of Public Policy </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line62" value="jQuery('#' + 'u270_line62').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SPP ', 'School of Public Policy ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line63" class="uif-field uif-linkField" >
+<a id="u273_line63" href="" target="_self"
+class="uif-link" >Sexual Diversity Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line63" value="jQuery('#' + 'u270_line63').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SDST ', 'Sexual Diversity Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line64" class="uif-field uif-linkField" >
+<a id="u273_line64" href="" target="_self"
+class="uif-link" >Slavic Languages and Literatures </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line64" value="jQuery('#' + 'u270_line64').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SLA ', 'Slavic Languages and Literatures ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line65" class="uif-field uif-linkField" >
+<a id="u273_line65" href="" target="_self"
+class="uif-link" >Sociology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line65" value="jQuery('#' + 'u270_line65').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SOC ', 'Sociology ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line66" class="uif-field uif-linkField" >
+<a id="u273_line66" href="" target="_self"
+class="uif-link" >South Asian Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line66" value="jQuery('#' + 'u270_line66').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SAS ', 'South Asian Studies ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line67" class="uif-field uif-linkField" >
+<a id="u273_line67" href="" target="_self"
+class="uif-link" >Spanish and Portuguese </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line67" value="jQuery('#' + 'u270_line67').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SPA ', 'Spanish and Portuguese ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line68" class="uif-field uif-linkField" >
+<a id="u273_line68" href="" target="_self"
+class="uif-link" >St. Michael&apos;s College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line68" value="jQuery('#' + 'u270_line68').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SMC ', 'St. Michael&amp;apos;s College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line69" class="uif-field uif-linkField" >
+<a id="u273_line69" href="" target="_self"
+class="uif-link" >Statistical Sciences </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line69" value="jQuery('#' + 'u270_line69').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','STAT ', 'Statistical Sciences ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line70" class="uif-field uif-linkField" >
+<a id="u273_line70" href="" target="_self"
+class="uif-link" >The Leslie Dan Faculty of Pharmacy </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line70" value="jQuery('#' + 'u270_line70').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PHM ', 'The Leslie Dan Faculty of Pharmacy ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line71" class="uif-field uif-linkField" >
+<a id="u273_line71" href="" target="_self"
+class="uif-link" >Trinity College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line71" value="jQuery('#' + 'u270_line71').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','TRIN ', 'Trinity College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line72" class="uif-field uif-linkField" >
+<a id="u273_line72" href="" target="_self"
+class="uif-link" >University College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line72" value="jQuery('#' + 'u270_line72').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UC ', 'University College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line73" class="uif-field uif-linkField" >
+<a id="u273_line73" href="" target="_self"
+class="uif-link" >Victoria College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line73" value="jQuery('#' + 'u270_line73').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','VIC ', 'Victoria College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line74" class="uif-field uif-linkField" >
+<a id="u273_line74" href="" target="_self"
+class="uif-link" >Women and Gender Studies Institute </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line74" value="jQuery('#' + 'u270_line74').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','WGSI ', 'Women and Gender Studies Institute ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u270_line75" class="uif-field uif-linkField" >
+<a id="u273_line75" href="" target="_self"
+class="uif-link" >Woodsworth College </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u270_line75" value="jQuery('#' + 'u270_line75').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','WDW ', 'Woodsworth College ','ARTSC', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsDeptList" value="jQuery('#artsDeptList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="artsReq" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" style="display:none;" data-parent="artsDept">
+<div id="u275" class="uif-header uif-subSectionHeader" data-headerFor="artsReq">
+</div>
+<div id="u276" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsReq">
+</div>
+<div id="u274_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="artsBreadthReq" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" data-parent="artsReq">
+<div id="u279" class="uif-header uif-subSectionHeader" data-headerFor="artsBreadthReq">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Breadth Requirements</span>
+</h4>
+</div>
+<div id="u280" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsBreadthReq">
+</div>
+<div id="u278_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="artsBreadthList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="artsBreadthReq">
+<div id="u283" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsBreadthList">
+</div>
+<table id="u282" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u346_line0" class="uif-field uif-linkField" >
+<a id="u349_line0" href="" target="_self"
+class="uif-link" >(1) Creative and Cultural Representation</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u346_line0" value="jQuery('#' + 'u346_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_2583', '(1) Creative and Cultural Representation', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u346_line1" class="uif-field uif-linkField" >
+<a id="u349_line1" href="" target="_self"
+class="uif-link" >(2) Thought, Belief and Behaviour</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u346_line1" value="jQuery('#' + 'u346_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_3574', '(2) Thought, Belief and Behaviour', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u346_line2" class="uif-field uif-linkField" >
+<a id="u349_line2" href="" target="_self"
+class="uif-link" >(3) Society and its Institutions</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u346_line2" value="jQuery('#' + 'u346_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_1764', '(3) Society and its Institutions', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u346_line3" class="uif-field uif-linkField" >
+<a id="u349_line3" href="" target="_self"
+class="uif-link" >(4) Living Things and Their Environment</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u346_line3" value="jQuery('#' + 'u346_line3').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_3726', '(4) Living Things and Their Environment', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u346_line4" class="uif-field uif-linkField" >
+<a id="u349_line4" href="" target="_self"
+class="uif-link" >(5) The Physical and Mathematical Universes</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u346_line4" value="jQuery('#' + 'u346_line4').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_3581', '(5) The Physical and Mathematical Universes', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsBreadthList" value="jQuery('#artsBreadthList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsBreadthReq" value="jQuery('#artsBreadthReq').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="artsDistReq" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" data-parent="artsReq">
+<div id="u352" class="uif-header uif-subSectionHeader" data-headerFor="artsDistReq">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Distribution Requirements</span>
+</h4>
+</div>
+<div id="u353" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsDistReq">
+</div>
+<div id="u351_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="artsDistList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="artsDistReq">
+<div id="u356" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="artsDistList">
+</div>
+<table id="u355" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u419_line0" class="uif-field uif-linkField" >
+<a id="u422_line0" href="" target="_self"
+class="uif-link" >Humanities</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u419_line0" value="jQuery('#' + 'u419_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','DIS_ID_2465', 'Humanities', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u419_line1" class="uif-field uif-linkField" >
+<a id="u422_line1" href="" target="_self"
+class="uif-link" >Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u419_line1" value="jQuery('#' + 'u419_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','DIS_ID_4215', 'Science', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u419_line2" class="uif-field uif-linkField" >
+<a id="u422_line2" href="" target="_self"
+class="uif-link" >Social Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u419_line2" value="jQuery('#' + 'u419_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','DIS_ID_3541', 'Social Science', 'Faculty of Arts and Science');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsDistList" value="jQuery('#artsDistList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsDistReq" value="jQuery('#artsDistReq').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsReq" value="jQuery('#artsReq').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['artsBreadthReq','artsDistReq'],order:['s$artsBreadthReq','s$artsDistReq'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="artsDept" value="jQuery('#artsDept').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['artsBreadthReq','artsDistReq'],order:['s$artsBreadthReq','s$artsDistReq'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="apscDept" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" data-parent="deptDisplayLeft">
+<div id="u427" class="uif-header uif-subSectionHeader" data-headerFor="apscDept">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Faculty of Applied Science and Engineering</span>
+</h4>
+</div>
+<div id="u428" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="apscDept">
+</div>
+<div id="u426_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="apscDeptList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="apscDept">
+<div id="u431" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="apscDeptList">
+</div>
+<table id="u430" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line0" class="uif-field uif-linkField" >
+<a id="u497_line0" href="" target="_self"
+class="uif-link" >Chemical Engineering and Applied Chemistry </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line0" value="jQuery('#' + 'u494_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CHE ', 'Chemical Engineering and Applied Chemistry ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line1" class="uif-field uif-linkField" >
+<a id="u497_line1" href="" target="_self"
+class="uif-link" >Civil Engineering </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line1" value="jQuery('#' + 'u494_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CIVIL', 'Civil Engineering ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line2" class="uif-field uif-linkField" >
+<a id="u497_line2" href="" target="_self"
+class="uif-link" >Cross Disciplinary Programs Office </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line2" value="jQuery('#' + 'u494_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CDP ', 'Cross Disciplinary Programs Office ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line3" class="uif-field uif-linkField" >
+<a id="u497_line3" href="" target="_self"
+class="uif-link" >Division of Engineering Science </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line3" value="jQuery('#' + 'u494_line3').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ESC ', 'Division of Engineering Science ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line4" class="uif-field uif-linkField" >
+<a id="u497_line4" href="" target="_self"
+class="uif-link" >Edward S. Rogers Sr. Dept. of Electrical & Computer Engin. </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line4" value="jQuery('#' + 'u494_line4').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ECE ', 'Edward S. Rogers Sr. Dept. of Electrical &amp; Computer Engin. ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line5" class="uif-field uif-linkField" >
+<a id="u497_line5" href="" target="_self"
+class="uif-link" >Engineering Communications Program </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line5" value="jQuery('#' + 'u494_line5').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ECP ', 'Engineering Communications Program ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line6" class="uif-field uif-linkField" >
+<a id="u497_line6" href="" target="_self"
+class="uif-link" >Faculty of Applied Science & Engineering </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line6" value="jQuery('#' + 'u494_line6').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','APSC ', 'Faculty of Applied Science &amp; Engineering ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line7" class="uif-field uif-linkField" >
+<a id="u497_line7" href="" target="_self"
+class="uif-link" >Institute of Biomaterials & Biomedical Engineering </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line7" value="jQuery('#' + 'u494_line7').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','BME ', 'Institute of Biomaterials &amp; Biomedical Engineering ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line8" class="uif-field uif-linkField" >
+<a id="u497_line8" href="" target="_self"
+class="uif-link" >Materials Science and Engineering </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line8" value="jQuery('#' + 'u494_line8').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MMS ', 'Materials Science and Engineering ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u494_line9" class="uif-field uif-linkField" >
+<a id="u497_line9" href="" target="_self"
+class="uif-link" >Mechanical & Industrial Engineering </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u494_line9" value="jQuery('#' + 'u494_line9').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MIE ', 'Mechanical &amp; Industrial Engineering ','APSC', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="apscDeptList" value="jQuery('#apscDeptList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="apscReq" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" style="display:none;" data-parent="apscDept">
+<div id="u499" class="uif-header uif-subSectionHeader" data-headerFor="apscReq">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Breadth Requirements</span>
+</h4>
+</div>
+<div id="u500" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="apscReq">
+</div>
+<div id="u498_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="apscReqList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="apscReq">
+<div id="u503" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="apscReqList">
+</div>
+<table id="u502" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u566_line0" class="uif-field uif-linkField" >
+<a id="u569_line0" href="" target="_self"
+class="uif-link" >APSc-Natural Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u566_line0" value="jQuery('#' + 'u566_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_4777', 'APSc-Natural Science', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u566_line1" class="uif-field uif-linkField" >
+<a id="u569_line1" href="" target="_self"
+class="uif-link" >Complementary Studies</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u566_line1" value="jQuery('#' + 'u566_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_5550', 'Complementary Studies', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u566_line2" class="uif-field uif-linkField" >
+<a id="u569_line2" href="" target="_self"
+class="uif-link" >Humanities & Social Sciences</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u566_line2" value="jQuery('#' + 'u566_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_4771', 'Humanities &amp; Social Sciences', 'Faculty of Applied Science and Engineering');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="apscReqList" value="jQuery('#apscReqList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="apscReq" value="jQuery('#apscReq').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="apscDept" value="jQuery('#apscDept').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['apscReq'],order:['s$apscReq'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="scarDept" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" data-parent="deptDisplayLeft">
+<div id="u573" class="uif-header uif-subSectionHeader" data-headerFor="scarDept">
+<h4 class="uif-headerText"><span class="uif-headerText-span">University of Toronto Scarborough</span>
+</h4>
+</div>
+<div id="u574" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="scarDept">
+</div>
+<div id="u572_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="scarDeptList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="scarDept">
+<div id="u577" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="scarDeptList">
+</div>
+<table id="u576" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line0" class="uif-field uif-linkField" >
+<a id="u643_line0" href="" target="_self"
+class="uif-link" >Anthropology (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line0" value="jQuery('#' + 'u640_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ANTSC', 'Anthropology (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line1" class="uif-field uif-linkField" >
+<a id="u643_line1" href="" target="_self"
+class="uif-link" >Biological Sciences (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line1" value="jQuery('#' + 'u640_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','BIOSC', 'Biological Sciences (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line2" class="uif-field uif-linkField" >
+<a id="u643_line2" href="" target="_self"
+class="uif-link" >Centre for Critical Development Studies (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line2" value="jQuery('#' + 'u640_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CDSSC', 'Centre for Critical Development Studies (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line3" class="uif-field uif-linkField" >
+<a id="u643_line3" href="" target="_self"
+class="uif-link" >Centre for French and Linguistics (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line3" value="jQuery('#' + 'u640_line3').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CFLSC', 'Centre for French and Linguistics (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line4" class="uif-field uif-linkField" >
+<a id="u643_line4" href="" target="_self"
+class="uif-link" >Centre for Teaching and Learning (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line4" value="jQuery('#' + 'u640_line4').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CTLSC', 'Centre for Teaching and Learning (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line5" class="uif-field uif-linkField" >
+<a id="u643_line5" href="" target="_self"
+class="uif-link" >Dept. of Arts, Culture & Media (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line5" value="jQuery('#' + 'u640_line5').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ACMSC', 'Dept. of Arts, Culture &amp; Media (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line6" class="uif-field uif-linkField" >
+<a id="u643_line6" href="" target="_self"
+class="uif-link" >Dept. of Computer & Mathematical Sci (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line6" value="jQuery('#' + 'u640_line6').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CMSSC', 'Dept. of Computer &amp; Mathematical Sci (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line7" class="uif-field uif-linkField" >
+<a id="u643_line7" href="" target="_self"
+class="uif-link" >Dept. of Historical & Cultural Studies (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line7" value="jQuery('#' + 'u640_line7').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','HCSSC', 'Dept. of Historical &amp; Cultural Studies (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line8" class="uif-field uif-linkField" >
+<a id="u643_line8" href="" target="_self"
+class="uif-link" >Dept. of Physical & Environmental Sci (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line8" value="jQuery('#' + 'u640_line8').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PESSC', 'Dept. of Physical &amp; Environmental Sci (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line9" class="uif-field uif-linkField" >
+<a id="u643_line9" href="" target="_self"
+class="uif-link" >English (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line9" value="jQuery('#' + 'u640_line9').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ENGSC', 'English (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line10" class="uif-field uif-linkField" >
+<a id="u643_line10" href="" target="_self"
+class="uif-link" >Human Geography (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line10" value="jQuery('#' + 'u640_line10').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','GGRSC', 'Human Geography (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line11" class="uif-field uif-linkField" >
+<a id="u643_line11" href="" target="_self"
+class="uif-link" >Management (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line11" value="jQuery('#' + 'u640_line11').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MGTSC', 'Management (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line12" class="uif-field uif-linkField" >
+<a id="u643_line12" href="" target="_self"
+class="uif-link" >Ontario Institute for Studies in Education/Univ. of Toronto </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line12" value="jQuery('#' + 'u640_line12').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','OISUT', 'Ontario Institute for Studies in Education/Univ. of Toronto ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line13" class="uif-field uif-linkField" >
+<a id="u643_line13" href="" target="_self"
+class="uif-link" >Philosophy (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line13" value="jQuery('#' + 'u640_line13').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PHLSC', 'Philosophy (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line14" class="uif-field uif-linkField" >
+<a id="u643_line14" href="" target="_self"
+class="uif-link" >Political Science (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line14" value="jQuery('#' + 'u640_line14').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','POLSC', 'Political Science (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line15" class="uif-field uif-linkField" >
+<a id="u643_line15" href="" target="_self"
+class="uif-link" >Psychology (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line15" value="jQuery('#' + 'u640_line15').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','PSYSC', 'Psychology (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u640_line16" class="uif-field uif-linkField" >
+<a id="u643_line16" href="" target="_self"
+class="uif-link" >Sociology (UTSC) </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u640_line16" value="jQuery('#' + 'u640_line16').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','SOCSC', 'Sociology (UTSC) ', 'SCAR','University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="scarDeptList" value="jQuery('#scarDeptList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="scarReq" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" style="display:none;" data-parent="scarDept">
+<div id="u645" class="uif-header uif-subSectionHeader" data-headerFor="scarReq">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Breadth Requirements</span>
+</h4>
+</div>
+<div id="u646" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="scarReq">
+</div>
+<div id="u644_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="scarReqList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="scarReq">
+<div id="u649" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="scarReqList">
+</div>
+<table id="u648" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u712_line0" class="uif-field uif-linkField" >
+<a id="u715_line0" href="" target="_self"
+class="uif-link" >Arts, Literature & Language</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u712_line0" value="jQuery('#' + 'u712_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_1153', 'Arts, Literature &amp; Language', 'University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u712_line1" class="uif-field uif-linkField" >
+<a id="u715_line1" href="" target="_self"
+class="uif-link" >History, Philosophy & Cultural Studies</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u712_line1" value="jQuery('#' + 'u712_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_5564', 'History, Philosophy &amp; Cultural Studies', 'University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u712_line2" class="uif-field uif-linkField" >
+<a id="u715_line2" href="" target="_self"
+class="uif-link" >Natural Sciences</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u712_line2" value="jQuery('#' + 'u712_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_1291', 'Natural Sciences', 'University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u712_line3" class="uif-field uif-linkField" >
+<a id="u715_line3" href="" target="_self"
+class="uif-link" >Quantitative Reasoning</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u712_line3" value="jQuery('#' + 'u712_line3').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_1703', 'Quantitative Reasoning', 'University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u712_line4" class="uif-field uif-linkField" >
+<a id="u715_line4" href="" target="_self"
+class="uif-link" >Social & Behavioural Sciences</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u712_line4" value="jQuery('#' + 'u712_line4').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','BRE_ID_1538', 'Social &amp; Behavioural Sciences', 'University of Toronto Scarborough');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="scarReqList" value="jQuery('#scarReqList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="scarReq" value="jQuery('#scarReq').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="scarDept" value="jQuery('#scarDept').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['scarReq'],order:['s$scarReq'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="utmDept" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" data-parent="deptDisplayLeft">
+<div id="u719" class="uif-header uif-subSectionHeader" data-headerFor="utmDept">
+<h4 class="uif-headerText"><span class="uif-headerText-span">University of Toronto Mississauga</span>
+</h4>
+</div>
+<div id="u720" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="utmDept">
+</div>
+<div id="u718_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="utmDeptList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="utmDept">
+<div id="u723" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="utmDeptList">
+</div>
+<table id="u722" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line0" class="uif-field uif-linkField" >
+<a id="u789_line0" href="" target="_self"
+class="uif-link" >Anthropology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line0" value="jQuery('#' + 'u786_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ANTRL', 'Anthropology ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line1" class="uif-field uif-linkField" >
+<a id="u789_line1" href="" target="_self"
+class="uif-link" >Biology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line1" value="jQuery('#' + 'u786_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMBIO', 'Biology ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line2" class="uif-field uif-linkField" >
+<a id="u789_line2" href="" target="_self"
+class="uif-link" >Chemical and Physical Sciences </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line2" value="jQuery('#' + 'u786_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','CHMPS', 'Chemical and Physical Sciences ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line3" class="uif-field uif-linkField" >
+<a id="u789_line3" href="" target="_self"
+class="uif-link" >Economics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line3" value="jQuery('#' + 'u786_line3').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMECO', 'Economics ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line4" class="uif-field uif-linkField" >
+<a id="u789_line4" href="" target="_self"
+class="uif-link" >English and Drama </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line4" value="jQuery('#' + 'u786_line4').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ENGDR', 'English and Drama ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line5" class="uif-field uif-linkField" >
+<a id="u789_line5" href="" target="_self"
+class="uif-link" >French </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line5" value="jQuery('#' + 'u786_line5').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','FRE ', 'French ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line6" class="uif-field uif-linkField" >
+<a id="u789_line6" href="" target="_self"
+class="uif-link" >Geography </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line6" value="jQuery('#' + 'u786_line6').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMGGR', 'Geography ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line7" class="uif-field uif-linkField" >
+<a id="u789_line7" href="" target="_self"
+class="uif-link" >Historical Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line7" value="jQuery('#' + 'u786_line7').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','HISCL', 'Historical Studies ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line8" class="uif-field uif-linkField" >
+<a id="u789_line8" href="" target="_self"
+class="uif-link" >Institute of Communication and Culture </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line8" value="jQuery('#' + 'u786_line8').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ICC ', 'Institute of Communication and Culture ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line9" class="uif-field uif-linkField" >
+<a id="u789_line9" href="" target="_self"
+class="uif-link" >Language Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line9" value="jQuery('#' + 'u786_line9').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','FGI ', 'Language Studies ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line10" class="uif-field uif-linkField" >
+<a id="u789_line10" href="" target="_self"
+class="uif-link" >Linguistics </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line10" value="jQuery('#' + 'u786_line10').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','LIN ', 'Linguistics ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line11" class="uif-field uif-linkField" >
+<a id="u789_line11" href="" target="_self"
+class="uif-link" >Management </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line11" value="jQuery('#' + 'u786_line11').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMMGT', 'Management ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line12" class="uif-field uif-linkField" >
+<a id="u789_line12" href="" target="_self"
+class="uif-link" >Mathematical and Computational Sciences </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line12" value="jQuery('#' + 'u786_line12').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','MCS ', 'Mathematical and Computational Sciences ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line13" class="uif-field uif-linkField" >
+<a id="u789_line13" href="" target="_self"
+class="uif-link" >Ontario Institute for Studies in Education/Univ. of Toronto </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line13" value="jQuery('#' + 'u786_line13').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','OISUT', 'Ontario Institute for Studies in Education/Univ. of Toronto ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line14" class="uif-field uif-linkField" >
+<a id="u789_line14" href="" target="_self"
+class="uif-link" >Philosophy </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line14" value="jQuery('#' + 'u786_line14').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMPHL', 'Philosophy ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line15" class="uif-field uif-linkField" >
+<a id="u789_line15" href="" target="_self"
+class="uif-link" >Political Science </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line15" value="jQuery('#' + 'u786_line15').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMPOL', 'Political Science ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line16" class="uif-field uif-linkField" >
+<a id="u789_line16" href="" target="_self"
+class="uif-link" >Psychology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line16" value="jQuery('#' + 'u786_line16').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMPSY', 'Psychology ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line17" class="uif-field uif-linkField" >
+<a id="u789_line17" href="" target="_self"
+class="uif-link" >Sociology </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line17" value="jQuery('#' + 'u786_line17').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMSOC', 'Sociology ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line18" class="uif-field uif-linkField" >
+<a id="u789_line18" href="" target="_self"
+class="uif-link" >University of Toronto Mississauga </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line18" value="jQuery('#' + 'u786_line18').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','ERIN ', 'University of Toronto Mississauga ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u786_line19" class="uif-field uif-linkField" >
+<a id="u789_line19" href="" target="_self"
+class="uif-link" >Visual Studies </a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u786_line19" value="jQuery('#' + 'u786_line19').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = ''; searchForCourseByDept('courseSearchResults', 'courseSearchResultPanel','UMVIS', 'Visual Studies ', 'ERIN', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="utmDeptList" value="jQuery('#utmDeptList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="utmReq" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection uif-boxLayoutVerticalItem clearfix" style="display:none;" data-parent="utmDept">
+<div id="u791" class="uif-header uif-subSectionHeader" data-headerFor="utmReq">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Distribution Requirements</span>
+</h4>
+</div>
+<div id="u792" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="utmReq">
+</div>
+<div id="u790_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="utmReqList" class="uif-group uif-collectionGroup uif-tableCollectionGroup uif-boxLayoutVerticalItem clearfix" data-parent="utmReq">
+<div id="u795" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="utmReqList">
+</div>
+<table id="u794" class="uif-tableCollectionLayout">
+<thead>
+<tr>
+<th scope="col" colspan="1"
+rowspan="1" class="infoline" >
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u858_line0" class="uif-field uif-linkField" >
+<a id="u861_line0" href="" target="_self"
+class="uif-link" >Humanities</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u858_line0" value="jQuery('#' + 'u858_line0').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','DIS_ID_UTM1', 'Humanities', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u858_line1" class="uif-field uif-linkField" >
+<a id="u861_line1" href="" target="_self"
+class="uif-link" >Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u858_line1" value="jQuery('#' + 'u858_line1').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','DIS_ID_UTM2', 'Science', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+<tr>
+<td role="presentation" colspan="1"
+rowspan="1" class="uif-field uif-linkField" >
+<div id="u858_line2" class="uif-field uif-linkField" >
+<a id="u861_line2" href="" target="_self"
+class="uif-link" >Social Science</a>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="u858_line2" value="jQuery('#' + 'u858_line2').click(function(e) {
+jq('#finder_crumb').attr('style', 'display:block;'); jq('#deptBrowseSection').attr('style', 'display:none;');back(); sInput = '';searchForCourseByReq('courseSearchResults', 'courseSearchResultPanel','DIS_ID_UTM3', 'Social Science', 'University of Toronto Mississauga');return false;
+});"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="utmReqList" value="jQuery('#utmReqList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="utmReq" value="jQuery('#utmReq').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="utmDept" value="jQuery('#utmDept').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['utmReq'],order:['s$utmReq'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="deptDisplayLeft" value="jQuery('#deptDisplayLeft').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['artsDept','apscDept','scarDept','utmDept'],order:['s$artsDept','s$apscDept','s$scarDept','s$utmDept'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="deptBrowseSection" value="jQuery('#deptBrowseSection').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['deptFacet','reqFacet','artsDept','apscDept','scarDept','utmDept'],order:['s$deptFacet','s$reqFacet','s$artsDept','s$apscDept','s$scarDept','s$utmDept'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="courseSearchResultSection" value="jQuery('#courseSearchResultSection').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:['facetDivisionNew','facetDeptNew','facetTermNew','facetDaysNew','facetTimeNew','facetCreditNew','facetLevelNew','deptFacet','reqFacet','artsDept','apscDept','scarDept','utmDept'],order:['searchQueryId','u49','textArea','jquery-tagbox-select','s$facetDivisionNew','s$facetDeptNew','s$facetTermNew','s$facetDaysNew','s$facetTimeNew','s$facetCreditNew','s$facetLevelNew','s$deptFacet','s$reqFacet','s$artsDept','s$apscDept','s$scarDept','s$utmDept'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<div id="myFavouritesSection" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxSubSection fl-container-200 myplan-section uif-boxLayoutHorizontalItem" data-parent="courseSearch">
+<div id="u868" class="uif-header uif-subSectionHeader" data-headerFor="myFavouritesSection">
+<h4 class="uif-headerText"><span class="uif-headerText-span">Favourites</span>
+</h4>
+</div>
+<div id="u869" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="myFavouritesSection">
+</div>
+<div id="u867_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="myFavouritesList" class="uif-group uif-boxGroup uif-verticalBoxGroup uif-boxLayoutVerticalItem clearfix" data-parent="myFavouritesSection">
+<div id="u872" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="myFavouritesList">
+</div>
+<div id="u871_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<div id="favouriteSection" class="uif-group uif-boxGroup uif-verticalBoxGroup myplan-course-search-empty uif-boxLayoutVerticalItem clearfix" data-parent="myFavouritesList">
+<div id="u874" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="favouriteSection">
+</div>
+<div id="u873_boxLayout" class="uif-boxLayout uif-verticalBoxLayout clearfix">
+<span id="emptyFavouritesMessage_span" class="uif-message fl-text-bold uif-boxLayoutVerticalItem clearfix" >
+You do not have any favourites
+</span>
+<div id="favoriteField" class="uif-field uif-inputField uif-boxLayoutVerticalItem clearfix" style="display: none;" data-parent="favouriteSection" data-role="InputField">
+<input id="favoriteField_control" type="text" name="courseId" value="" size="30" class="uif-control uif-textControl"
+tabindex="0" data-controlFor="favoriteField" >
+<input name="script" type="hidden" data-role="dataScript" data-for="favoriteField_control" value="jQuery('#favoriteField_control').data('controlFor', 'favoriteField');"/>
+<!-- placeholder for dynamic field markers -->
+<span id="favoriteField_markers"></span>
+<div id="favoriteField_errors" class="uif-validationMessages" style="display: none;" data-messagesFor="favoriteField">
+</div>
+<span id="favoriteField_info_message"></span>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="favoriteField" value="jQuery('#favoriteField').data('validationMessages', {displayMessages:true,useTooltip:true,messagingEnabled:true,hasOwnMessages:false,serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="favouriteSection" value="jQuery('#favouriteSection').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:['favoriteField'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="myFavouritesList" value="jQuery('#myFavouritesList').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:['favoriteField'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="myFavouritesSection" value="jQuery('#myFavouritesSection').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:['favoriteField'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<!-- PAGE RELATED VARS -->
+<input id="pageId" type="hidden" name="view.currentPageId" value="courseSearch" >
+<input id="pageTitle" type="hidden" name="view.currentPage.header.headerText" value="" >
+<input id="historyParameterString" type="hidden" name="formHistory.historyParameterString" value="null%5E%24%5Enull%5E%24%5EHome%5E%24%5Ehttp%3A%2F%2Fcoursefinder.utoronto.ca%2Fcourse-search%2Fportal.do%5E%24%5Enull%24%5E%24CourseSearch-FormView%5E%24%5Enull%5E%24%5E%5E%24%5Ehttp%3A%2F%2Fcoursefinder.utoronto.ca%2Fcourse-search%2Fsearch%2FcourseSearch%3FmethodToCall%3Dstart%26viewId%3DCourseSearch-FormView%26formKey%3Df267de81-a031-4b02-85a0-26f0d9a3bdce%26showHome%3Dfalse%5E%24%5Ef267de81-a031-4b02-85a0-26f0d9a3bdce" >
+<input name="script" type="hidden" data-role="dataScript" data-for="courseSearch" value="jQuery('#courseSearch').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:true,forceShow:true,sections:['facetDivisionNew','facetDeptNew','facetTermNew','facetDaysNew','facetTimeNew','facetCreditNew','facetLevelNew','deptFacet','reqFacet','artsDept','apscDept','scarDept','utmDept','myFavouritesSection'],order:['searchQueryId','u49','textArea','jquery-tagbox-select','s$facetDivisionNew','s$facetDeptNew','s$facetTermNew','s$facetDaysNew','s$facetTimeNew','s$facetCreditNew','s$facetLevelNew','s$deptFacet','s$reqFacet','s$artsDept','s$apscDept','s$scarDept','s$utmDept','s$myFavouritesSection'],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+<input name="script" type="hidden" data-role="script" data-for="courseSearch" value="jQuery(document).ready(function(e) {
+reload();initProcess();addAttributeAndValue('searchQueryId'); addTagCloud('jquery-tagbox-select_control', 'textArea_control'); if (jq('#jquery-tagbox-select_control').attr('value') == '') {hideDiv('advanceSearchFieldsId');} else{jq('#expand').attr('style','display:none;');jq('#collapse').attr('style','display:block;'); }
+setupPage(true);
+});"/>
+</div>
+</div>
+<!-- VIEW FOOTER -->
+<div id="viewfooter_div">
+<div id="u8" class="uif-footer" data-parent="CourseSearch-FormView">
+<div id="u10" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="u8">
+</div>
+<div id="u9_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u8" value="jQuery('#u8').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</div>
+</div>
+<input name="script" type="hidden" data-role="script" data-for="CourseSearch-FormView" value="jQuery(document).ready(function(e) {
+jQuery.extend(jQuery.validator.messages, {
+required: 'Required',
+minExclusive: 'Value must be greater than {0}',
+maxInclusive: 'Value cannot be greater than {0}',
+minLengthConditional: 'Must be at least {0} characters',
+maxLengthConditional: 'Must be at most {0} characters'});
+});"/>
+<span id="formComplete"></span>
+</form>
+<input name="script" type="hidden" data-role="script" value="performFocusAndJumpTo(true, true, '',
+'', '');"/>
+</div>
+<!-- APPLICATION FOOTER -->
+<div class="uif-Footer">
+<div class="footer-links">
+<dl>
+<dd>&copy; 2015 University of Toronto | Version: 1.2.0</dd>
+<dd><a href="http://www.utoronto.ca">www.utoronto.ca</a> | <a href="http://www.utoronto.ca/contacts.htm">Contacts</a> | University Switchboard: (416) 978-2011</dd>
+<dd><a href="http://maps.google.ca/maps?f=q&amp;hl=en&amp;geocode=&amp;q=27+King's+College+Circle&amp;sll=44.692088,-78.892822&amp;sspn=6.341762,11.348877&amp;ie=UTF8&amp;z=17&amp;g=27+King's+College+Circle&amp;iwloc=addr">University of Toronto, 27 King's College Circle, Toronto, Ontario, Canada M5S 1A1</a></dd>
+<dd class="send_feedback">
+<a id="feedbackbox" href="#sendFeedbackDialogView"><button class="feedback-button" type="button"><img src="../courseSearch/images/quote.png" class="feedback-quote">
+Send Feedback
+</button>
+</a>
+<!--onclick="sendMail('/feedback/sendFeedbackMail')">Send Feedback</a> -->
+</dd>
+</dl>
+</div>
+<div style="float:right;" class="footer_icons">
+<a href="http://www.ngsis.utoronto.ca/" target="new"><img src="../courseSearch/images/logo_acorn.png" id="logo_acorn" alt="Acorn"/></a>
+</div>
+</div>
+<div style="display:none">
+<form id="sendFeedbackDialogView" action="../search/courseSearch" method="post" enctype="multipart/form-data">
+<h3>Send Feedback</h3>
+<label for="senderName">Name *</label>
+<input type="text" id="senderName" name="senderName" size="55" />
+<br>
+<label for="Email">Email *</label>
+<input type="text" id="feedbackFromEmail" name="fromEmail" size="55" />
+<br>
+<label for="Type">Type of Feedback *</label>
+<select name="feedbackSubject" id="feedbackSubject">
+<option value>Select</option>
+<option value="New Feature">New feature</option>
+<option value="Problem">Problem</option>
+<option value="General">General</option>
+</select>
+<br>
+<label for="Message">Message *</label>
+<textarea name="feedbackMessage" id="feedbackMessage" rows="8" cols="57" maxlength="2000"></textarea>
+<br>
+<input type="button" value="Send" onclick="if (validateFieldNotNull('senderName', 'Sender Name')){if (validateFieldNotNull('feedbackFromEmail','Email'))
+{if (validateFieldNotNull('feedbackSubject', 'Type of Feedback')) {if (validateFieldNotNull('feedbackMessage','Message')){sendMailFlex('/feedback/sendFeedbackMail','sendFeedbackDialogView');}}
+else {return false;}}}else {return false;}"/>
+</form>
+</div>
+<div id="u1" class="fl-container-flex ks-page-bottom" data-parent="CourseSearch-FormView">
+<div id="u3" class="uif-validationMessages uif-groupValidationMessages" style="display: none;" data-messagesFor="u1">
+</div>
+<div id="u2_boxLayout" class="uif-boxLayout uif-horizontalBoxLayout clearfix">
+</div>
+</div>
+<input name="script" type="hidden" data-role="dataScript" data-for="u1" value="jQuery('#u1').data('validationMessages', {summarize:true,displayMessages:true,collapseFieldMessages:true,displayLabel:true,hasOwnMessages:false,pageLevel:false,forceShow:false,sections:[],order:[],serverErrors:[],serverWarnings:[],serverInfo:[]});"/>
+</body>
+</html>
