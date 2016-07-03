@@ -38,16 +38,32 @@ function init() {
 
 	document.getElementById('no_filter').addEventListener('click', function(){
 		UI.showLoader();
-		var nodes = exec.nodes.get();
-		for(var i=0; i < nodes.length; i++){
-			if(nodes[i].type == 'UNIVERSITY'){
-				nodes[i].color = '#AF5054';
-			} else {
-				nodes[i].color = '#247BA0';
-			}
-		}
+		
+		resetNodes();
+
 		UI.hideLoader();
 	});
+}
+
+function resetNodes(){
+	var nodes = exec.nodes.get();
+	var to_update = [];
+	for(var i=0; i < nodes.length; i++){
+		var node = {
+			id: nodes[i].id, 
+			color: null,
+		}
+
+		if(nodes[i].type == 'UNIVERSITY'){
+			node.color = '#AF5054';
+		} else {
+			node.color = '#247BA0';
+		}
+
+		to_update.push(node);
+	}
+
+	exec.nodes.update(to_update);
 }
 
 function launchGraph(data){
@@ -63,20 +79,23 @@ function launchGraph(data){
 	exec.nodes = new vis.DataSet([]);
 	exec.edges = new vis.DataSet([]);
 
+	var nodes_to_add = [];
+	var edges_to_add = [];
+
 	for(var i=0; i < data.length; i++){
 		// universities
-		exec.nodes.add([
+		nodes_to_add.push(
 		{
 			name: data[i].name,
 			id: data[i].id,
 			color: '#AF5054',
 			title: data[i].name.slice(0, 17) + "...",
 			type: 'UNIVERSITY'
-		}]);
+		});
 
 		for(var j =0; j < data[i].uvs.length; j++){
 			var uv = data[i].uvs[j];
-			exec.nodes.add([
+			nodes_to_add.push(
 			{
 				code: uv.code,
 				name: uv.name,
@@ -86,15 +105,18 @@ function launchGraph(data){
 				tech: uv.tech || "",
 				type: 'CLASS',
 				color: '#247BA0'
-			}]);
+			});
 
-			exec.edges.add([
+			edges_to_add.push(
 			{
 				from:  uv.id, 
 				to:  data[i].id
-			}]);
+			});
 		}
 	}
+
+	exec.nodes.add(nodes_to_add);
+	exec.edges.add(edges_to_add);
 
 	exec.graph = new vis.Network(exec.vis_container, {
 		nodes: exec.nodes,
@@ -133,7 +155,8 @@ function getNodes(){
 		method: 'GET'
 	}, function(err, res, xhr){
 		if(err){
-			throw new Error(err);
+			console.error(err);
+			throw new Error("Error getting nodes");
 		}
 
 		launchGraph(JSON.parse(res));
@@ -164,27 +187,31 @@ function displayProperties(prop){
 
 function setFilter(property, filter){
 	UI.showLoader();
+	resetNodes();
 	var nodes = exec.nodes.get({
 		filter: function(item){
 			return item[property] != filter;
 		}
 	});
 
+	var to_update = [];
+
 	for(var i = 0; i<nodes.length; i++){
 		if(nodes[i].type == 'UNIVERSITY'){
 			continue;
 		}
-		exec.nodes.update({
+		to_update.push({
 			id: nodes[i].id, 
-			color: '#ebebeb',
-			size: 50
+			color: '#ebebeb'
 		});
 	}
+
+	exec.nodes.update(to_update);
 
 	setTimeout(function(){
 		exec.graph.stopSimulation();
 		UI.hideLoader();
-	}, 30 * 1000); //30 seconds
+	}, 5 * 1000); //30 seconds
 }
 
 init();
