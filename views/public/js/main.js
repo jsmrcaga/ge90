@@ -51,6 +51,7 @@ function resetNodes(){
 	for(var i=0; i < nodes.length; i++){
 		var node = {
 			id: nodes[i].id, 
+			mass:1,
 			color: null,
 		}
 
@@ -75,6 +76,8 @@ function launchGraph(data){
 			solver: 'forceAtlas2Based',
 		}
 	};
+
+	console.info("Constructing graph...");
 
 	exec.nodes = new vis.DataSet([]);
 	exec.edges = new vis.DataSet([]);
@@ -128,6 +131,8 @@ function launchGraph(data){
 		edges: exec.edges
 	}, options);
 
+	console.info("Graph loaded.");
+
 	setTimeout(function(){
 		exec.graph.stopSimulation();
 		UI.populateMenus(config.categories, config.technologies, 
@@ -155,6 +160,7 @@ function launchGraph(data){
 
 function getNodes(){
 	UI.showLoader();
+	console.info("Getting nodes...");
 	Workshop.ajax({
 		url:'http://' + window.location.hostname + '/uvs',
 		method: 'GET'
@@ -164,6 +170,7 @@ function getNodes(){
 			throw new Error("Error getting nodes");
 		}
 
+		console.info("Nodes loaded");
 		launchGraph(JSON.parse(res));
 	});
 
@@ -207,7 +214,7 @@ function setFilter(property, filter){
 		}
 		to_update.push({
 			id: nodes[i].id, 
-			color: '#ebebeb'
+			color: 'rgba(100, 100, 100, 0.2)',
 		});
 	}
 
