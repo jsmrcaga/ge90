@@ -84,17 +84,20 @@ function launchGraph(data){
 
 	for(var i=0; i < data.length; i++){
 		// universities
-		nodes_to_add.push(
-		{
+		var uni = {
 			name: data[i].name,
 			id: data[i].id,
 			color: '#AF5054',
 			title: data[i].name.slice(0, 17) + "...",
-			type: 'UNIVERSITY'
-		});
+			type: 'UNIVERSITY',
+			uvs: 0
+		};
 
 		for(var j =0; j < data[i].uvs.length; j++){
 			var uv = data[i].uvs[j];
+
+			uni.uvs++;
+
 			nodes_to_add.push(
 			{
 				code: uv.code,
@@ -113,6 +116,8 @@ function launchGraph(data){
 				to:  data[i].id
 			});
 		}
+
+		nodes_to_add.push(uni);
 	}
 
 	exec.nodes.add(nodes_to_add);
